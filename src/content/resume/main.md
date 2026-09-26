@@ -1,15 +1,16 @@
 ---
-title: "Yudhasono Aditio — Resume"
-updatedDate: "2026-03-26"
+title: Yudhasono Aditio — Resume
+updatedDate: 2026-03-26
 ---
-
 # Yudhasono Aditio
+
 **Civil Technologist**  
 📍 Indonesia | [LinkedIn Profile](https://www.linkedin.com/in/yudhasonoaditio) | [GitHub Profile](https://github.com/yaditio)
 
 ---
 
 ## About
+
 Experienced Civil Technologist with a strong background in various types of projects, including infrastructure (roads, bridges, and drainage systems), architectural works, and irrigation structures.
 
 ---
@@ -17,6 +18,7 @@ Experienced Civil Technologist with a strong background in various types of proj
 ## Experience
 
 ### **Civil Engineer**
+
 **TeamworX Indonesia** · Contract  
 *Feb 2024 - Present · 2 yrs 8 mos*  
 *Jakarta Metropolitan Area*  
@@ -25,15 +27,16 @@ Experienced Civil Technologist with a strong background in various types of proj
 2. Performing hydrological and hydraulic analyses to develop efficient stormwater management and drainage solutions.
 3. Developing engineering concepts, conducting technical calculations, sizing infrastructure components, and preparing preliminary layouts for civil structures and drainage networks.
 4. Coordinating with BIM modelers to translate engineering designs into accurate Detailed Engineering Drawings (DED) and BIM deliverables.
-4. Collaborating with multidisciplinary teams to resolve design clashes, review quantities, and ensure seamless integration between civil works and other engineering disciplines.
-5. Supporting construction and site engineering discussions by providing technical design solutions and engineering recommendations to address field issues and optimize constructability.
-6. Ensuring designs are practical, technically sound, cost-effective, and aligned with project requirements, applicable standards, and client expectations.
+5. Collaborating with multidisciplinary teams to resolve design clashes, review quantities, and ensure seamless integration between civil works and other engineering disciplines.
+6. Supporting construction and site engineering discussions by providing technical design solutions and engineering recommendations to address field issues and optimize constructability.
+7. Ensuring designs are practical, technically sound, cost-effective, and aligned with project requirements, applicable standards, and client expectations.
 
-*Skills:* Procore, Autodesk Civil 3D and +6 skills
+
 
 ---
 
 ### **Design Engineer**
+
 **Daelim - Wika - Waskita Joint Operation - Karian Multipurpose Dam Project** · Contract  
 *Mar 2019 - Dec 2023 · 4 yrs 10 mos*  
 *Pasir Tanjung, Lebak, Banten*  
@@ -43,11 +46,12 @@ Experienced Civil Technologist with a strong background in various types of proj
 3. Coordinate with other team (Geodesy, Construction, QS, etc) in Accordance to provide neccesary data to Consultant Request
 4. Liase with Any other department related to Project Activity
 
-*Skills:* VBA Excel, Design Specifications and +3 skills
+
 
 ---
 
 ### **Freelance Design Coordinator**
+
 **Scalarindo utama consult, PT**  
 *Dec 2018 - Feb 2019 · 3 mos*  
 
@@ -56,27 +60,30 @@ Experienced Civil Technologist with a strong background in various types of proj
 ---
 
 ### **Cad Operator**
+
 **Matra Rekayasa Internasional, PT.**  
 *May 2017 - Dec 2018 · 1 yr 8 mos*  
 *Greater Jakarta Area, Indonesia*  
 
 Preparing, Create, and Modify Design Highway, Structural, and any other Drawing in Coordination with manager, Engineer, and other staff related to the Project. Review, Modify, and Justify necessary design in highway drawing and calculation (Geometric & Pavement)
 
-*Skills:* VBA Excel, Kerja tim and +1 skill
+
 
 ---
 
 ### **CAD operator**
+
 **Obayashi - Shimizu - Jaya Konstruksi - Joint Venture**  
 *Nov 2014 - May 2017 · 2 yrs 7 mos*  
 
 Create, reproduce, & update drawing for construction both in 3D & 2D. Coordinate with site people for producing working drawing. Assisting engineers for any other necessary drawing. Plan, Estimate and administer the actual quantity of each construction work in drawing. Sitemeasuring for some works if necessary
 
-*Skills:* Kerja tim and Microsoft Excel
+
 
 ---
 
 ### **CAD Drafter**
+
 **Arsigema Properti**  
 *2012 – 2014*  
 *Depok*  
@@ -88,12 +95,14 @@ Draft, Reproduce, Edit CAD drawing and other drawing that related to both Work d
 ## Education
 
 ### **Institut Sains dan Teknologi Nasional (ISTN) Jakarta**
+
 *Master of Engineering - MEng, Civil Engineering*  
 *2017 – 2021*
 
 ---
 
 ### **Institut Sains dan Teknologi Nasional (ISTN) Jakarta**
+
 *Bachelor's degree, Architecture Engineering*  
 *2009 – 2014*
 
@@ -102,30 +111,37 @@ Draft, Reproduce, Edit CAD drawing and other drawing that related to both Work d
 ## Licenses & Certifications
 
 ### **BIM-VDC for Construction**
+
 *LinkedIn* · Issued Jan 2024  
 *Skills:* Building Information Modeling (BIM)
 
 ### **AutoCAD: Construction Drawings**
+
 *LinkedIn* · Issued Jan 2024  
 *Skills:* AutoCAD, Construction Drawings
 
 ### **AutoCAD: Developing CAD Standards**
+
 *LinkedIn* · Issued Jan 2024  
 *Skills:* AutoCAD
 
 ### **Cert Prep Autodesk Certified Professional: Civil 3D for Infrastructure Design**
+
 *LinkedIn* · Issued Jan 2024
 
 ### **Autolisp Training**
+
 *Indonesia Drafting School* · Issued May 2016
 
 ### **Autodesk Certified Profesional : AutoCAD 2015**
+
 *Autodesk* · Issued Nov 2015  
 *Credential ID:* 000438145
 
 ---
 
 ## Skills (32)
+
 1. Civil Engineering
 2. Infrastructure Design
 3. Road & Highway Engineering
@@ -162,6 +178,7 @@ Draft, Reproduce, Edit CAD drawing and other drawing that related to both Work d
 ---
 
 ## Languages
+
 - **Indonesian**
 - **English**
 
@@ -170,25 +187,31 @@ Draft, Reproduce, Edit CAD drawing and other drawing that related to both Work d
 ## Projects
 
 ### **Multipurpose dam Karian, Ds. Pasir tanjung, lebak, banten**
+
 *Mar 2019 – Dec 2023*  
 *Associated with Daelim - Wika - Waskita Joint Operation - Karian Multipurpose Dam Project*
 
 ### **Kariangau Port Land Facility Detail Engineering Design**
+
 *Dec 2018 – Feb 2019*  
 *Associated with Scalarindo utama consult, PT*
 
 ### **Delta mas Block Woodchester Detail Engineering Design**
+
 *2018 – 2018*  
 *Associated with Matra Rekayasa Internasional, PT.*
 
 ### **Delta mas ROW 105 Road Detail Engineering Design**
+
 *2018 – 2018*  
 *Associated with Matra Rekayasa Internasional, PT.*
 
 ### **Medan-Binjai Highway Section 1-3 Detail Engineering Design**
+
 *2017 – 2018*  
 *Associated with Matra Rekayasa Internasional, PT.*
 
 ### **Mass Rapid Transit Project CP 103 (H. Nawi - Blok A - Blok M - Sisingamangaraja)**
+
 *Nov 2014 – Apr 2017*  
 *Associated with Obayashi - Shimizu - Jaya Konstruksi - Joint Venture*
