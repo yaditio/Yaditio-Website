@@ -9,16 +9,17 @@ interface Props {
 }
 
 const { slug, title, description, category, repoUrl, demoUrl } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <div class="card">
   {category && <span class="card-tag">{category}</span>}
   <h3 class="card-title">
-    <a href={`/projects/${slug}`}>{title}</a>
+    <a href={`${baseUrl}/apps/${slug}`}>{title}</a>
   </h3>
   <p class="card-desc">{description}</p>
   <div class="card-footer">
-    <a href={`/projects/${slug}`} class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">View Details &rarr;</a>
+    <a href={`${baseUrl}/apps/${slug}`} class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">View Details &rarr;</a>
     {repoUrl && (
       <a href={repoUrl} target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);">
         GitHub &nearr;

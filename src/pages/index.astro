@@ -10,6 +10,7 @@ const downloads = await getCollection('downloads');
 
 const featuredApps = appsList.slice(0, 2);
 const recentPosts = blogPosts.slice(0, 2);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout title="Yudhasono Aditio (Yaditio) | Civil Technologist Portfolio & Apps">
@@ -24,11 +25,11 @@ const recentPosts = blogPosts.slice(0, 2);
     </p>
 
     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-      <a href="/resume" class="btn btn-primary">
+      <a href={`${baseUrl}/resume`} class="btn btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
         View Resume
       </a>
-      <a href="/download" class="btn btn-secondary">
+      <a href={`${baseUrl}/download`} class="btn btn-secondary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
         Download Apps
       </a>
@@ -50,7 +51,7 @@ const recentPosts = blogPosts.slice(0, 2);
         <h2>Featured <span class="gradient-text">Apps & Software</span></h2>
         <p style="color: var(--text-muted);">Engineering tools & BIM automation developments.</p>
       </div>
-      <a href="/apps" style="font-weight: 600;">Explore All Apps &rarr;</a>
+      <a href={`${baseUrl}/apps`} style="font-weight: 600;">Explore All Apps &rarr;</a>
     </div>
 
     <div class="grid">
@@ -74,7 +75,7 @@ const recentPosts = blogPosts.slice(0, 2);
         <h2>Software <span class="gradient-text">Downloads</span></h2>
         <p style="color: var(--text-muted);">Open-source desktop applications ready for download.</p>
       </div>
-      <a href="/download" style="font-weight: 600;">View Downloads Page &rarr;</a>
+      <a href={`${baseUrl}/download`} style="font-weight: 600;">View Downloads Page &rarr;</a>
     </div>
 
     <div class="grid">
@@ -99,7 +100,7 @@ const recentPosts = blogPosts.slice(0, 2);
         <h2>Latest <span class="gradient-text">Articles</span></h2>
         <p style="color: var(--text-muted);">Notes on civil engineering, BIM, and software automation.</p>
       </div>
-      <a href="/blog" style="font-weight: 600;">Read All Posts &rarr;</a>
+      <a href={`${baseUrl}/blog`} style="font-weight: 600;">Read All Posts &rarr;</a>
     </div>
 
     <div class="grid">

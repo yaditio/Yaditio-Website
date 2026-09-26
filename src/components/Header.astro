@@ -1,26 +1,27 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'Apps', path: '/apps' },
-  { name: 'Resume', path: '/resume' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Download', path: '/download' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Home', path: `${baseUrl}/` },
+  { name: 'Apps', path: `${baseUrl}/apps` },
+  { name: 'Resume', path: `${baseUrl}/resume` },
+  { name: 'Blog', path: `${baseUrl}/blog` },
+  { name: 'Download', path: `${baseUrl}/download` },
+  { name: 'Contact', path: `${baseUrl}/contact` },
 ];
 ---
 
 <header>
   <div class="container nav-wrapper">
-    <a href="/" class="logo">
+    <a href={`${baseUrl}/`} class="logo">
       <span>Yaditio</span>
     </a>
     <nav>
       <ul class="nav-links">
         {navItems.map((item) => {
-          const isActive = item.path === '/' 
-            ? pathname === '/' 
+          const isActive = item.path === `${baseUrl}/` 
+            ? (pathname === `${baseUrl}/` || pathname === `${baseUrl}`) 
             : pathname.startsWith(item.path);
           return (
             <li>
