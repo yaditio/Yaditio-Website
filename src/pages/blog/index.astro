@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<BaseLayout title="Blog & Live LinkedIn Feed | Yudhasono Aditio Prananda" description="Auto-updating live LinkedIn posts and engineering articles by Yudhasono Aditio Prananda.">
+  <div style="margin-bottom: 2.5rem;">
+    <h1>Blog & <span class="gradient-text">Live LinkedIn Feed</span></h1>
+    <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 650px;">
+      Live, auto-updating feed from LinkedIn and engineering blog articles.
+    </p>
+  </div>
+
+  <!-- Live Auto-Updating LinkedIn Activity Section -->
+  <section style="margin-bottom: 3.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+          <h2 style="margin: 0;">Live <span class="gradient-text">LinkedIn Feed</span></h2>
+        </div>
+        <p style="color: var(--text-muted); margin: 0;">Automatically synced with @yudhasonoaditio's latest LinkedIn posts.</p>
+      </div>
+      <a href="https://www.linkedin.com/in/yudhasonoaditio/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+        Open LinkedIn Profile &nearr;
+      </a>
+    </div>
+
+    <!-- Live Dynamic Feed Container -->
+    <div id="linkedin-live-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem;">
+      
+      <!-- Initial Loading / Default Live Cards -->
+      <div class="card linkedin-card" style="padding: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(18, 24, 38, 0.9); border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: #0a66c2; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1rem;">
+                YA
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-main);">Yudhasono Aditio Prananda</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">Civil Technologist &bull; Live Feed</div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 0.93rem; color: var(--text-main); line-height: 1.5; margin-bottom: 0.75rem;">
+            After taking a long break, I’ve finally resumed development on my apps. Here’s today’s RTWALL update:...
+          </p>
+          <div style="width: 100%; height: 180px; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--border-color); margin-bottom: 0.75rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: #60a5fa; margin-bottom: 0.4rem;">App.py — RTWALL Update</div>
+            <div style="width: 46px; height: 46px; border-radius: 50%; background: #0a66c2; color: #fff; display: flex; align-items: center; justify-content: center;">
+              ▶
+            </div>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/yudhasonoaditio/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem; background: #0a66c2; border: none;">
+          View Latest Post on LinkedIn &nearr;
+        </a>
+      </div>
+
+      <!-- Live Card 2: DEM Mapping -->
+      <div class="card linkedin-card" style="padding: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(18, 24, 38, 0.9); border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">🔁 Yudhasono Aditio Prananda reposted</div>
+          <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: #10b981; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">TM</div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-main);">TechGeo Mapping</div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Digital Elevation Models</div>
+            </div>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-main); line-height: 1.5; margin-bottom: 0.75rem;">
+            Free DEM main sources and resolutions 🌍 Demystifying Free Digital Elevation Models (DEMs)...
+          </p>
+          <div style="height: 180px; background: rgba(16, 185, 129, 0.08); border-radius: 8px; padding: 1rem; border: 1px solid rgba(16, 185, 129, 0.2); display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0.75rem;">
+            <span style="font-size: 0.75rem; font-weight: bold; color: #34d399;">DEM SOURCES COMPARISON</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Copernicus, USGS 3DEP, JAXA ALOS</span>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/yudhasonoaditio/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;">
+          View Repost on LinkedIn &nearr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Articles Section -->
+  <section>
+    <div style="margin-bottom: 1.5rem;">
+      <h2>Technical <span class="gradient-text">Articles & Notes</span></h2>
+      <p style="color: var(--text-muted);">In-depth engineering writeups and software documentation.</p>
+    </div>
+
+    <div class="grid">
+      {allPosts.map((post) => (
+        <BlogCard
+          slug={post.slug}
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          author={post.data.author}
+          tags={post.data.tags}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Dynamic Live Client-Side LinkedIn Feed Fetcher
+  async function fetchLiveLinkedinFeed() {
+    const container = document.getElementById('linkedin-live-container');
+    if (!container) return;
+
+    try {
+      // Fetch public RSS/Feed proxy for @yudhasonoaditio
+      const rssUrl = encodeURIComponent('https://rss.app/feeds/linkedin-profile-yudhasonoaditio.xml');
+      const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+      const data = await response.json();
+
+      if (data && data.items && data.items.length > 0) {
+        // Clear default cards and render fresh live items from LinkedIn feed
+        container.innerHTML = data.items.slice(0, 6).map((item: any) => `
+          <div class="card" style="padding: 1.25rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #0a66c2;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="card-tag" style="background: rgba(10,102,194,0.15); color: #60a5fa;">LinkedIn Live</span>
+                <span style="font-size: 0.75rem; color: var(--text-dim);">${new Date(item.pubDate).toLocaleDateString()}</span>
+              </div>
+              <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-main);">${item.title}</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">${item.description.replace(/<[^>]*>?/gm, '').slice(0, 160)}...</p>
+            </div>
+            <a href="${item.link || 'https://www.linkedin.com/in/yudhasonoaditio/recent-activity/all/'}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 0.5rem; background: #0a66c2; border: none;">
+              Open Post on LinkedIn &nearr;
+            </a>
+          </div>
+        `).join('');
+      }
+    } catch (err) {
+      console.log('Live LinkedIn feed fetch active with fallback cards.');
+    }
+  }
+
+  fetchLiveLinkedinFeed();
+</script>

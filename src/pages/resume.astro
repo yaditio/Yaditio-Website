@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const resumeEntry = await getEntry('resume', 'main');
+const { Content } = resumeEntry ? await resumeEntry.render() : { Content: null };
+---
+
+<BaseLayout title="Resume | Yudhasono Aditio" description="Resume of Yudhasono Aditio - Experienced Civil Technologist.">
+  <div style="max-width: 860px; margin: 0 auto;">
+    
+    <!-- Top Header -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <h1 style="margin: 0; font-size: 2.5rem;">
+          <span class="gradient-text">Yudhasono Aditio</span>
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--text-muted); margin-top: 0.25rem;">
+          Civil Technologist
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem;">
+        <a href="https://www.linkedin.com/in/yudhasonoaditio" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+          LinkedIn Profile &nearr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Resume Card -->
+    {Content && (
+      <div class="card" style="padding: 2.5rem;">
+        <div class="prose" style="max-width: 100%;">
+          <Content />
+        </div>
+      </div>
+    )}
+
+  </div>
+</BaseLayout>

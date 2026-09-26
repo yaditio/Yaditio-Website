@@ -1,0 +1,138 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: resume
+    label: Resume / CV
+    type: file
+    path: src/content/resume/main.md
+    fields:
+      - name: title
+        label: Resume Title
+        type: string
+        required: true
+      - name: updatedDate
+        label: Last Updated Date
+        type: date
+      - name: body
+        label: Resume Content (Markdown)
+        type: rich-text
+
+  - name: apps
+    label: Software Apps
+    type: collection
+    path: src/content/apps
+    format: yaml-frontmatter
+    view:
+      fields: [title, category, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short Description
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: category
+        label: Category
+        type: string
+      - name: repoUrl
+        label: GitHub Repository URL
+        type: string
+      - name: demoUrl
+        label: Demo / Live URL
+        type: string
+      - name: featured
+        label: Featured App
+        type: boolean
+        default: false
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    view:
+      fields: [title, date, author]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short Description
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: author
+        label: Author
+        type: string
+        default: "Yudhasono Aditio"
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: body
+        label: Post Content
+        type: rich-text
+
+  - name: downloads
+    label: Downloads & Releases
+    type: collection
+    path: src/content/downloads
+    format: yaml-frontmatter
+    view:
+      fields: [title, version, repoUrl]
+    fields:
+      - name: title
+        label: App Name
+        type: string
+        required: true
+      - name: description
+        label: Short Description
+        type: string
+      - name: version
+        label: Version
+        type: string
+      - name: repoUrl
+        label: GitHub Repository URL
+        type: string
+      - name: downloadUrl
+        label: Direct Download Link / Release
+        type: string
+      - name: category
+        label: Category
+        type: string
+      - name: body
+        label: Documentation / Readme
+        type: rich-text
+
+  - name: messages
+    label: Contact Messages
+    type: collection
+    path: src/content/messages
+    format: yaml-frontmatter
+    view:
+      fields: [name, email, date]
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: email
+        label: Email
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: body
+        label: Message
+        type: rich-text

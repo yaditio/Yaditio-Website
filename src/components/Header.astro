@@ -1,0 +1,36 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Apps', path: '/apps' },
+  { name: 'Resume', path: '/resume' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Download', path: '/download' },
+  { name: 'Contact', path: '/contact' },
+];
+---
+
+<header>
+  <div class="container nav-wrapper">
+    <a href="/" class="logo">
+      <span>Yaditio</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        {navItems.map((item) => {
+          const isActive = item.path === '/' 
+            ? pathname === '/' 
+            : pathname.startsWith(item.path);
+          return (
+            <li>
+              <a href={item.path} class={isActive ? 'active' : ''}>
+                {item.name}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DownloadCard from '../../components/DownloadCard.astro';
+import { getCollection } from 'astro:content';
+
+const appsList = await getCollection('apps');
+---
+
+<BaseLayout title="Apps | Yudhasono Aditio" description="Explore my open-source applications and engineering software tools.">
+  <div style="margin-bottom: 2.5rem;">
+    <h1>Software <span class="gradient-text">Apps</span></h1>
+    <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px;">
+      A showcase of my engineering software, automation toolkits, and open-source applications (updatable via Pages CMS).
+    </p>
+  </div>
+
+  <div class="grid">
+    {appsList.map((app) => (
+      <DownloadCard
+        slug={app.slug}
+        title={app.data.title}
+        description={app.data.description}
+        repoUrl={app.data.repoUrl}
+        demoUrl={app.data.demoUrl}
+        category={app.data.category}
+      />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  description?: string;
+  category?: string;
+  repoUrl?: string;
+  demoUrl?: string;
+}
+
+const { slug, title, description, category, repoUrl, demoUrl } = Astro.props;
+---
+
+<div class="card">
+  {category && <span class="card-tag">{category}</span>}
+  <h3 class="card-title">
+    <a href={`/projects/${slug}`}>{title}</a>
+  </h3>
+  <p class="card-desc">{description}</p>
+  <div class="card-footer">
+    <a href={`/projects/${slug}`} class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">View Details &rarr;</a>
+    {repoUrl && (
+      <a href={repoUrl} target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);">
+        GitHub &nearr;
+      </a>
+    )}
+  </div>
+</div>
